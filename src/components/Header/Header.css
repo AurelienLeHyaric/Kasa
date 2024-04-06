@@ -1,0 +1,19 @@
+Header {
+   display: flex;
+   justify-content: space-between;
+   margin: 50px 100px;
+   height: 68px;
+}
+
+nav {
+   display: flex;
+   justify-content: flex-end;
+}
+ul {
+   display: flex;
+   list-style: none;
+}
+
+li {
+   margin-right: 20px;
+}
