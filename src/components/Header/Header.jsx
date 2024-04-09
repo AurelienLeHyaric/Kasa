@@ -1,6 +1,7 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import logo from "../../assets/images/logo-header.svg"
-import "./Header.css"
+import "./Header.scss"
 
 function Header() {
    return (
@@ -9,10 +10,10 @@ function Header() {
          <nav>
             <ul>
                <li>
-                  <a href="/accueil">Accueil</a>
+                  <Link to="/accueil">Accueil</Link>
                </li>
                <li>
-                  <a href="/apropos">A Propos</a>
+                  <Link to="/apropos">A Propos</Link>
                </li>
             </ul>
          </nav>
