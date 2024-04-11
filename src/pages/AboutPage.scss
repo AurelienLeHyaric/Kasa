@@ -1,0 +1,5 @@
+@use "../components/Banner/Banner.scss" as *;
+
+.aboutbanner {
+   @include paramBanniere("../assets/images/banniere_apropos.jpg", 0.3);
+}

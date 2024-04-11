@@ -1,7 +1,13 @@
+@use "../components/Banner/Banner.scss" as *;
+
 .h1-title {
    color: #ffffff;
    line-height: 223px;
    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-   font-size: 3rem;
+   font-size: 2.5vw;
    margin: inherit;
+}
+
+.homebanner {
+   @include paramBanniere("../assets/images/banniere_accueil.jpg", 0.6);
 }

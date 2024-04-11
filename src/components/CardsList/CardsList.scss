@@ -1,0 +1,17 @@
+.cards-list {
+   margin: 50px 0 0 0;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   place-items: center;
+   grid-gap: 10px;
+   padding: 20px;
+   background-color: #f6f6f6;
+   border-radius: 25px;
+   @media (max-width: 1023px) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   @media (max-width: 768px) {
+      margin: 20px 0 0 0;
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
