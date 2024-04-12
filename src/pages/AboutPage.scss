@@ -3,3 +3,11 @@
 .aboutbanner {
    @include paramBanniere("../assets/images/banniere_apropos.jpg", 0.3);
 }
+
+.aboutmenu {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-gap: 30px;
+   margin: 50px auto 0 auto;
+   max-width: 1023px;
+}

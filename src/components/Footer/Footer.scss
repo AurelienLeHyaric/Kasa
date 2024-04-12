@@ -1,6 +1,9 @@
 footer {
+   display: grid;
+   place-items: center;
    background-color: black;
    text-align: center;
+   height: 209px;
 }
 
 footer p {
