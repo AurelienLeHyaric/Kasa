@@ -1,8 +1,33 @@
 .btn-collapse {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    padding-left: 15px;
    background-color: #ff6060;
    height: 52px;
-   border-radius: 5px;
    text-align: start;
    border: 0px;
+
+   > svg {
+      cursor: pointer;
+      padding: 15px;
+      animation: rotate;
+      animation-timing-function: ease-out;
+      animation-duration: 300ms;
+   }
+}
+
+.collapse-conteneur {
+   background-color: #f6f6f673;
+   border-radius: 5px;
+   padding: 0 20px;
+}
+
+@keyframes rotate {
+   from {
+      transform: rotate(180deg);
+   }
+   to {
+      transform: rotate(0deg);
+   }
 }
