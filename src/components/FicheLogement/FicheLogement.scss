@@ -1,0 +1,139 @@
+#fiche-section {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
+
+   .title {
+      grid-column: 1 / 4;
+      grid-row: 1;
+      font-size: 36px;
+      font-weight: 500;
+      color: #ff6060;
+      margin: 30px 5px 0 0;
+   }
+
+   .host {
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+      display: flex;
+      text-align: right;
+      justify-self: right;
+   }
+
+   .hostname {
+      font-size: 18px;
+      color: #ff6060;
+      margin: 30px 0;
+      padding: 5px;
+      width: 93px;
+      text-align: right;
+      justify-self: right;
+   }
+
+   .hostpicture {
+      max-width: 64px;
+      border-radius: 100%;
+      margin: 24px 0;
+      justify-self: right;
+   }
+
+   .location {
+      grid-column: 1 / 6;
+      grid-row: 2;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 5px 20px 0;
+   }
+
+   .tags {
+      grid-column: 1 / 3;
+      grid-row: 3;
+      display: flex;
+      align-items: center;
+      max-height: 25px;
+      margin: 0 5px 25px 0;
+   }
+
+   .tag {
+      padding: 5px 25px;
+      margin-right: 10px;
+      border-radius: 10px;
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      background-color: #ff6060; /* Espace entre les tags */
+   }
+
+   .rating {
+      grid-column: 3 / 5;
+      grid-row: 3;
+      margin: 0;
+      justify-self: right;
+   }
+
+   #description {
+      grid-column: 1 / 3;
+      grid-row: 4;
+      border-radius: 10px;
+   }
+
+   #equipments {
+      grid-column: 3 / 5;
+      grid-row: 4;
+      border-radius: 10px;
+   }
+}
+
+@media (max-width: 600px) {
+   #fiche-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+
+      .title {
+         grid-column: 1 / 3;
+         grid-row: 1;
+      }
+
+      .host {
+         grid-column: 2 / 3;
+         grid-row: 4;
+      }
+
+      .hostname {
+         grid-column: 2 / 3;
+         grid-row: 4;
+      }
+
+      .hostpicture {
+         max-width: 64px;
+         grid-column: 2 / 3;
+         grid-row: 4;
+      }
+
+      .location {
+         grid-column: 1 / 3;
+         grid-row: 2;
+      }
+
+      .tags {
+         grid-column: 1 / 3;
+         grid-row: 3;
+      }
+
+      .rating {
+         grid-column: 1 / 2;
+         grid-row: 4;
+      }
+
+      #description {
+         grid-column: 1 / 3;
+         grid-row: 5;
+      }
+
+      #equipments {
+         grid-column: 1 / 3;
+         grid-row: 6;
+      }
+   }
+}
