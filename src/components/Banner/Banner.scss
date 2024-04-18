@@ -7,6 +7,11 @@
    overflow: hidden;
    position: relative;
    z-index: 0;
+   object-fit: cover;
+   @media (max-width: 600px) {
+      height: 111px;
+      border-radius: 10px;
+   }
 
    &::before {
       content: "";

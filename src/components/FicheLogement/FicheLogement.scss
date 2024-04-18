@@ -1,7 +1,7 @@
 #fiche-section {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   grid-gap: 10px;
+   grid-template-rows: repeat(3, auto) minmax(100px, auto);
 
    .title {
       grid-column: 1 / 4;
@@ -23,8 +23,8 @@
    .hostname {
       font-size: 18px;
       color: #ff6060;
-      margin: 30px 0;
-      padding: 5px;
+      margin: 30px 0 0 0;
+      padding: 5px 10px;
       width: 93px;
       text-align: right;
       justify-self: right;
@@ -32,8 +32,9 @@
 
    .hostpicture {
       max-width: 64px;
+      max-height: 64px;
       border-radius: 100%;
-      margin: 24px 0;
+      margin: 24px 0 0 0;
       justify-self: right;
    }
 
@@ -46,17 +47,19 @@
    }
 
    .tags {
-      grid-column: 1 / 3;
+      grid-column: 1 / 4;
       grid-row: 3;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       max-height: 25px;
-      margin: 0 5px 25px 0;
+      margin: 0 5px 0px 0;
    }
 
    .tag {
       padding: 5px 25px;
       margin-right: 10px;
+      margin-bottom: 0;
       border-radius: 10px;
       color: white;
       font-size: 14px;
@@ -65,75 +68,124 @@
    }
 
    .rating {
-      grid-column: 3 / 5;
+      grid-column: 4 / 5;
       grid-row: 3;
       margin: 0;
       justify-self: right;
+      * {
+         margin: 0 4px;
+      }
    }
 
    #description {
       grid-column: 1 / 3;
       grid-row: 4;
       border-radius: 10px;
+      margin-top: 10px;
+      margin-right: 38px;
+      align-self: end;
+
+      + .collapse-conteneur {
+         padding: 20px 20px;
+         margin-right: 38px;
+         grid-column: 1 / 3;
+         grid-row: 5;
+      }
    }
 
    #equipments {
       grid-column: 3 / 5;
       grid-row: 4;
       border-radius: 10px;
+      margin-top: 20px;
+      margin-left: 38px;
+      align-self: end;
+
+      + .collapse-conteneur {
+         padding: 20px 20px;
+         margin-left: 38px;
+         grid-column: 3 / 5;
+         grid-row: 5;
+
+         p {
+            margin: 0 0 5px 0;
+         }
+      }
    }
 }
 
 @media (max-width: 600px) {
    #fiche-section {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       grid-gap: 10px;
 
-      .title {
-         grid-column: 1 / 3;
-         grid-row: 1;
+      .title,
+      .location,
+      .tags,
+      #description,
+      #equipments,
+      .collapse-conteneur {
+         grid-column: 1 / -1;
       }
 
+      .rating,
       .host {
-         grid-column: 2 / 3;
-         grid-row: 4;
+         grid-column: span 1;
       }
 
-      .hostname {
-         grid-column: 2 / 3;
-         grid-row: 4;
-      }
-
-      .hostpicture {
-         max-width: 64px;
-         grid-column: 2 / 3;
-         grid-row: 4;
-      }
-
-      .location {
-         grid-column: 1 / 3;
-         grid-row: 2;
-      }
-
-      .tags {
-         grid-column: 1 / 3;
-         grid-row: 3;
+      .title {
+         grid-row: 1;
+         font-size: 18px;
       }
 
       .rating {
-         grid-column: 1 / 2;
          grid-row: 4;
+         grid-column: 1 / 2;
+         justify-self: left;
+         margin-top: 54px;
+      }
+      .host {
+         grid-row: 4;
+         grid-column: 2 / 3;
+         margin-top: 24px;
+      }
+
+      .hostname {
+         font-size: 12px;
+      }
+
+      .hostpicture {
+         max-width: 32px;
+         max-height: 32px;
+      }
+
+      .location {
+         grid-row: 2;
+         font-size: 14px;
+      }
+
+      .tags {
+         grid-row: 3;
+         max-height: 18px;
       }
 
       #description {
-         grid-column: 1 / 3;
          grid-row: 5;
+         margin: 0;
+         + .collapse-conteneur {
+            grid-row: 6;
+            margin: 0;
+         }
       }
 
       #equipments {
-         grid-column: 1 / 3;
-         grid-row: 6;
+         grid-row: 7;
+         margin: 0;
+         + .collapse-conteneur {
+            grid-row: 8;
+            margin: 0;
+         }
       }
    }
 }

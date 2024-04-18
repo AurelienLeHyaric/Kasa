@@ -32,10 +32,11 @@
       transition: transform 0.3s ease;
    }
 
-   @media (max-width: 768px) {
-      max-width: 335px;
+   @media (max-width: 600px) {
+      max-width: 560px;
       max-height: 255px;
       aspect-ratio: inherit;
+      margin: 20px 0 0 0;
    }
 }
 

@@ -11,7 +11,9 @@
       grid-template-columns: repeat(2, 1fr);
    }
    @media (max-width: 768px) {
-      margin: 20px 0 0 0;
+      margin: 0;
+      padding: 0;
       grid-template-columns: repeat(1, 1fr);
+      background-color: inherit;
    }
 }

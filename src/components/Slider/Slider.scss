@@ -6,19 +6,37 @@
    width: 100%;
    max-width: 1240px;
 
+   @media (max-width: 600px) {
+      max-height: 335px;
+   }
+
    button {
       position: absolute;
       background-color: transparent;
       border: none;
       cursor: pointer;
+
+      svg {
+         height: 79px;
+
+         @media (max-width: 600px) {
+            height: 20px;
+         }
+      }
    }
 
    .btn-prev {
       left: 10px;
+      @media (max-width: 600px) {
+         left: -10px;
+      }
    }
 
    .btn-next {
       right: 10px;
+      @media (max-width: 600px) {
+         right: -10px;
+      }
    }
 
    img {

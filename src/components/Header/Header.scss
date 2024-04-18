@@ -3,26 +3,39 @@ Header {
    justify-content: space-between;
    margin: 50px 100px 0 100px;
    height: 68px;
+
+   .active {
+      text-decoration: underline;
+      padding: 5px;
+   }
    a {
       text-decoration: none;
+      color: black;
    }
-}
+   @media (max-width: 600px) {
+      margin: 20px;
+   }
 
-nav {
-   display: flex;
-   justify-content: flex-end;
-}
-ul {
-   display: flex;
-   list-style: none;
-}
+   nav {
+      display: flex;
+      justify-content: flex-end;
+   }
+   ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+   }
 
-li {
-   margin-left: 57px;
-   text-decoration: none;
-   font-size: 24px;
-   @media (max-width: 768px) {
-      font-size: 1rem;
-      text-transform: uppercase;
+   li {
+      margin-left: 57px;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 500;
+      @media (max-width: 600px) {
+         font-size: 12px;
+         font-weight: 500;
+         text-transform: uppercase;
+         margin-left: 26px;
+      }
    }
 }

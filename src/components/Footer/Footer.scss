@@ -4,8 +4,16 @@ footer {
    background-color: black;
    text-align: center;
    height: 209px;
-}
+   width: 100%;
+   grid-gap: 0;
 
-footer p {
-   color: white;
+   p {
+      color: white;
+      align-self: flex-start;
+      width: 40%;
+   }
+
+   picture {
+      align-self: flex-end;
+   }
 }

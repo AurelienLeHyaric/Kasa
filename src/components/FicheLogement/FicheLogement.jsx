@@ -2,6 +2,7 @@ import React from "react"
 import "./FicheLogement.scss"
 import logements from "../../data/logements.json"
 import BtnCollapse from "../BtnCollapse/BtnCollapse"
+import Notation from "../Rating/Rating"
 
 function FicheLogement({ logementId }) {
    const logement = logements.find((index) => index.id === logementId)
@@ -10,7 +11,6 @@ function FicheLogement({ logementId }) {
    const hostpicture = logement.host.picture
    const tags = logement.tags
    const location = logement.location
-   const rating = logement.rating
    const description = logement.description
    const equipements = logement.equipments
 
@@ -29,9 +29,17 @@ function FicheLogement({ logementId }) {
             <p className="hostname">{hostname}</p>
             <img className="hostpicture" src={hostpicture} alt="" />
          </div>
-         <p className="rating">{rating}</p>
-         <BtnCollapse id="description">{description}</BtnCollapse>
-         <BtnCollapse id="equipments">{equipements}</BtnCollapse>
+         <div className="rating">
+            <Notation rating={logement.rating} />
+         </div>
+         <BtnCollapse id="description" title="Description">
+            {description}
+         </BtnCollapse>
+         <BtnCollapse id="equipments" title="Équipements">
+            {equipements.map((equipments, index) => (
+               <p key={index}>{equipments}</p>
+            ))}
+         </BtnCollapse>
       </section>
    )
 }
