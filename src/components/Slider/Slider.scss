@@ -7,7 +7,7 @@
    max-width: 1240px;
 
    @media (max-width: 600px) {
-      max-height: 335px;
+      max-height: 255px;
    }
 
    button {
@@ -44,5 +44,6 @@
       height: 100%;
       object-fit: cover;
       border-radius: 25px;
+      border-radius: 10px;
    }
 }
