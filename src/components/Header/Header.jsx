@@ -15,12 +15,12 @@ function Header() {
          <nav>
             <ul>
                <li>
-                  <NavLink to="/accueil" activeClassName="active">
+                  <NavLink to="/accueil" activeclassname="active">
                      Accueil
                   </NavLink>
                </li>
                <li>
-                  <NavLink to="/apropos" activeClassName="active">
+                  <NavLink to="/apropos" activeclassname="active">
                      A Propos
                   </NavLink>
                </li>

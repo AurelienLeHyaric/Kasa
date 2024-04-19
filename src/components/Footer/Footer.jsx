@@ -11,7 +11,7 @@ function Footer() {
             <source media="(min-width: 601px)" srcSet={logoFooter} />
             <img src={logoFooter} alt="Logo" />
          </picture>
-         <p>© 2020 Kasa. All rights reserved</p>
+         <p>© 2024 Kasa. All rights reserved</p>
       </footer>
    )
 }

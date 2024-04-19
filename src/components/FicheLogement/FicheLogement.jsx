@@ -6,14 +6,7 @@ import Notation from "../Rating/Rating"
 
 function FicheLogement({ logementId }) {
    const logement = logements.find((index) => index.id === logementId)
-   const title = logement.title
-   const hostname = logement.host.name
-   const hostpicture = logement.host.picture
-   const tags = logement.tags
-   const location = logement.location
-   const description = logement.description
-   const equipements = logement.equipments
-
+   const { title, tags, host, location, description, equipments } = logement
    return (
       <section id="fiche-section">
          <h2 className="title">{title}</h2>
@@ -26,8 +19,8 @@ function FicheLogement({ logementId }) {
             ))}
          </div>
          <div className="host">
-            <p className="hostname">{hostname}</p>
-            <img className="hostpicture" src={hostpicture} alt="" />
+            <p className="hostname">{host.name}</p>
+            <img className="hostpicture" src={host.picture} alt={`${host.name}`} />
          </div>
          <div className="rating">
             <Notation rating={logement.rating} />
@@ -36,7 +29,7 @@ function FicheLogement({ logementId }) {
             {description}
          </BtnCollapse>
          <BtnCollapse id="equipments" title="Équipements">
-            {equipements.map((equipments, index) => (
+            {equipments.map((equipments, index) => (
                <p key={index}>{equipments}</p>
             ))}
          </BtnCollapse>

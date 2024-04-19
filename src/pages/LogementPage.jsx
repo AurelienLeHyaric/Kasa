@@ -1,10 +1,29 @@
-import React from "react"
-import { useParams } from "react-router-dom"
+import React, { useEffect } from "react"
+import { useParams, useNavigate } from "react-router-dom"
 import Slider from "../components/Slider/Slider"
 import FicheLogement from "../components/FicheLogement/FicheLogement"
+import logements from "../data/logements.json"
 
 function LogementPage() {
    const { id } = useParams()
+   const navigate = useNavigate()
+   let idExiste = false
+   for (let i = 0; i < logements.length; i++) {
+      if (logements[i].id === id) {
+         idExiste = true
+         break
+      }
+   }
+   //Redirection vers la page erreur si l'ID de logement n'existe pas
+   useEffect(() => {
+      if (!idExiste) {
+         navigate("/erreur")
+      }
+   }, [id, navigate, idExiste])
+
+   if (!idExiste) {
+      return null
+   }
 
    return (
       <>
