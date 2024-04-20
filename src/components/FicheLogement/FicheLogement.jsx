@@ -26,7 +26,7 @@ function FicheLogement({ logementId }) {
             <Notation rating={logement.rating} />
          </div>
          <BtnCollapse id="description" title="Description">
-            {description}
+            {<p>{description}</p>}
          </BtnCollapse>
          <BtnCollapse id="equipments" title="Équipements">
             {equipments.map((equipments, index) => (

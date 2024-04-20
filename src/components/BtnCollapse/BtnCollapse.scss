@@ -15,11 +15,13 @@
    svg {
       cursor: pointer;
       padding: 15px;
-      transform: rotate(0deg);
-      &:active {
-         transform: rotate(180deg);
-         transition: transform 300ms ease-in-out;
+      &.rotate-open {
+         animation: rotationOuverture 0.4s ease-in-out forwards;
       }
+      &.rotate-close {
+         animation: rotationFermeture 0.2s ease-in-out forwards;
+      }
+
       @media (max-width: 600px) {
          height: 10px;
          padding: 5px;
@@ -30,5 +32,36 @@
 .collapse-conteneur {
    background-color: #f6f6f673;
    border-radius: 5px;
-   padding: 0 20px;
+   overflow: hidden;
+   max-height: 0;
+   opacity: 0;
+   padding: 0px 20px;
+   transform: translateY(-60px);
+   transition: transform 0.2s ease-out, max-height 0.2s ease-out, opacity 0.2s;
+   z-index: -1;
+
+   &.open {
+      max-height: 300px;
+      opacity: 1;
+      transform: translateY(0px);
+      transition: transform 0.4s ease-out, max-height 0.4s ease-out, opacity 0.4s;
+   }
+}
+
+@keyframes rotationOuverture {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(-180deg);
+   }
+}
+
+@keyframes rotationFermeture {
+   from {
+      transform: rotate(-180deg);
+   }
+   to {
+      transform: rotate(0deg);
+   }
 }

@@ -9,7 +9,7 @@ function AboutPage() {
          <div className="aboutbanner">
             <Banner></Banner>
          </div>
-         <section className="aboutmenu">
+         <section id="aboutmenu">
             <BtnCollapse id="aboutcollapse" title="Fiabilité">
                <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
             </BtnCollapse>

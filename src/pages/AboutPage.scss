@@ -4,19 +4,23 @@
    @include paramBanniere("../assets/images/banniere_apropos.jpg", 0.3, 0);
 }
 
-.aboutmenu {
+#aboutmenu {
    display: flex;
    flex-direction: column;
-   margin: 0px auto 0 auto;
+   margin: 18px auto;
    max-width: 1023px;
+   @media (max-width: 600px) {
+      margin: 0 auto;
+   }
 }
 
 #aboutcollapse {
    border-radius: 5px;
-   margin-top: 20px;
+   margin-top: 30px;
    font-size: 1.5rem;
    font-weight: 700;
    @media (max-width: 600px) {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+      margin-top: 20px;
    }
 }
