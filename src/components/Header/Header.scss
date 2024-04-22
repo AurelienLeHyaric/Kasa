@@ -4,10 +4,6 @@ Header {
    margin: 50px 100px 0 100px;
    height: 68px;
 
-   .active {
-      text-decoration: underline;
-      padding: 5px;
-   }
    a {
       text-decoration: none;
       color: black;
@@ -34,13 +30,17 @@ Header {
    li {
       margin-left: 57px;
       text-decoration: none;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 500;
       @media (max-width: 600px) {
-         font-size: 12px;
+         font-size: 0.8rem;
          font-weight: 500;
          text-transform: uppercase;
          margin-left: 26px;
       }
    }
+}
+
+.nav-link.active {
+   text-decoration: underline;
 }

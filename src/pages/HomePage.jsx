@@ -6,14 +6,14 @@ import CardsList from "../components/CardsList/CardsList"
 function HomePage() {
    return (
       <>
-         <section className="homebanner">
+         <div className="homebanner">
             <Banner>
                <h1 className="h1-title">Chez vous, partout et ailleurs</h1>
             </Banner>
-         </section>
-         <section className="logements-cards">
+         </div>
+         <div className="logements-cards">
             <CardsList></CardsList>
-         </section>
+         </div>
       </>
    )
 }
