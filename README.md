@@ -50,7 +50,7 @@ Vous pourrez ainsi accéder à toutes les fonctionnalités.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Voici une version anglaise du texte que tu m'as fourni :
+
 
 # Welcome! 👋
 
