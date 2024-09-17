@@ -50,38 +50,49 @@ Vous pourrez ainsi accéder à toutes les fonctionnalités.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-### Welcome! 👋
+Voici une version anglaise du texte que tu m'as fourni :
 
-This is my first project, which involved creating the entire homepage of the Booki website using HTML/CSS based on the Figma mockup, which you can find below:  
-<a href='https://www.figma.com/design/gtGKzsR8Cs451txBDFn9dc/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?node-id=3-0&t=TD8WijU8RymyGnnU-1' target="_blank">Link to the Figma mockup</a>
+# Welcome! 👋
 
-<a href="https://aurelienlehyaric.github.io/Booki/" target="_blank">
-  <img src="https://aurelienlehyaric.com/images/kasa/cover.jpg" alt="Booki Screenshot" />
-</a>
+I developed the front-end of this project using React, based on the Figma mockup that you can find here:
+<a href='https://www.figma.com/design/BClyU6CCokjcMTCKhLFo5v/Kasa_FR?node-id=0-1&node-type=canvas&t=0hRd2uMgGN9qemq1-0' target="_blank">Link to Figma mockup</a>
+
+[<a href="[https://aurelienlehyaric.com/images/kasa/cover.jpg](https://aurelienlehyaric.com/images/kasa/cover.jpg)/" target="_blank">
+  <img src="https://aurelienlehyaric.com/images/kasa/cover.jpg" alt="Screenshot of the Kasa website" />
+</a>](https://aurelienlehyaric.com/images/kasa/cover.jpg)
 
 #### Key points of the project:
-- Mockup slicing.
-- Ensuring the render matches the mockup.
-- Responsive design for tablets and mobile devices.
-- Respecting HTML semantics.
-- Code validation through W3C validators (HTML and CSS).
+- The base was initialized using **CREATE REACT APP (CRA)**.
+- The accommodations on the website are generated from a **JSON** file containing the **DATA**.
+- **REACT ROUTER** was used for the site’s routing management.
+- Reusable components were defined across multiple files.
+- A **CAROUSEL** was also created to display various photos of the accommodation.
 
-#### Technologies used in this project:
+##### Special attention was paid to the following aspects:
+- Ensuring proper routing, including cases when an accommodation ID is unknown, which redirects to the "404" page as expected.
+- Component breakdown was designed to ensure the code remains **readable**, **easily understandable**, and **maintainable**.
+- The proper functioning of the **COLLAPSE** component with its **transition** effect.
+- Respecting **RESPONSIVE** design, regardless of screen size.
+
+###### Skills and technologies implemented in this project include:
 
 ![HTML](https://img.shields.io/badge/HTML-%23FFac45.svg?&style=for-the-badge&logo=html5&logoColor=white&color=orange)
 ![CSS](https://img.shields.io/badge/CSS-%23FFac45.svg?&style=for-the-badge&logo=css3&logoColor=white&color=blue)
-![RESPONSIVE](https://img.shields.io/badge/RESPONSIVE-18A303?&style=for-the-badge&logo=RESPONSIVE&logoColor=white&color=18A303)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-%23FFac45.svg?&style=for-the-badge&logo=javascript&logoColor=white&color=yellow)
 ![FIGMA](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-
-#### Instructions to test the project:<br>
-You can test the project directly through the link:  
-https://aurelienlehyaric.github.io/Booki/
-
-You can also test it by cloning the repository:<br>
-**`https://github.com/AurelienLeHyaric/Booki.git`**  
-And access the home page **INDEX.HTML** using **LIVE-SERVER** on **VS-CODE**.<br>
+![REACT](https://img.shields.io/badge/React-005C84?style=for-the-badge&logo=react&logoColor=white)
+![REACT ROUTER](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![RESPONSIVE](https://img.shields.io/badge/RESPONSIVE-18A303?&style=for-the-badge&logo=RESPONSIVE&logoColor=white&color=18A303)
 
 #### Check out my portfolio:
-[![My Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://www.aurelienlehyaric.com)
+[![My website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://www.aurelienlehyaric.com)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aurelien-le-hyaric/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AurelienLeHyaric)
+
+#### Instructions to test the project:<br>
+- Clone the repository:<br>
+**`git clone https://github.com/AurelienLeHyaric/Kasa.git`**
+- From the **Kasa** directory:<br>
+- Run **`NPM INSTALL`** then **`NPM START`**, this will install the project dependencies and start the project.
+- The website should open automatically. If not, you can access it via this URL: **http://localhost:3000**.<br>
+You will then be able to use all the features.
