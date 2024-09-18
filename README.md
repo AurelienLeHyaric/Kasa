@@ -1,4 +1,5 @@
 # Bienvenue ! 👋
+(English version below)
 
 
 J'ai réalisé la partie front-end de ce projet en React, je me suis basé sur la maquette Figma que vous pouvez retrouver ici :
